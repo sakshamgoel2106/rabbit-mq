@@ -15,7 +15,7 @@ The college messaging system handles diverse routing requirements using four pri
 
 ## 📁 Project Directory Structure
 
-
+```text
 rabbitmq-basic-assignment/
 │
 ├── config/
