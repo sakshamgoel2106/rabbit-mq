@@ -1,0 +1,27 @@
+{
+  "name": "rabbit-mq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prod:direct": "node producers/directProducer.js",
+    "prod:fanout": "node producers/fanoutProducer.js",
+    "prod:topic": "node producers/topicProducer.js",
+    "prod:headers": "node producers/headersProducer.js",
+    "cons:direct": "node consumers/direct/directConsumers.js",
+    "cons:fanout": "node consumers/fanout/fanoutConsumers.js",
+    "cons:topic": "node consumers/topic/topicConsumers.js",
+    "cons:headers": "node consumers/headers/headersConsumers.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "amqplib": "^2.0.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
